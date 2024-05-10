@@ -59,6 +59,8 @@ class _ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin
                   text: choice.name,
                 );
               }).toList(),
+            dividerHeight: 0,//去除底部黑线
+            tabAlignment: TabAlignment.start,//isScrollable: true时去除左侧边距
               //点击事件
               onTap: (int i) {
                 print(i);

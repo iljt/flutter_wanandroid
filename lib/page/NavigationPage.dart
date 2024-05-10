@@ -155,7 +155,8 @@ class _NavigationPageState extends State<NavigationPage>{
       spacing: 10.0, //两个widget之间横向的间隔
       direction: Axis.horizontal, //方向
       alignment: WrapAlignment.start, //内容排序方式
-      children: List.generate(articles.length, (int index) {
+      children:
+      List.generate(articles.length, (int index) {
         return ActionChip(
           //标签文字
           label: Text(
